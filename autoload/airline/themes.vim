@@ -46,13 +46,13 @@ if !exists(":def") || !airline#util#has_vim9_script()
         continue
       endif
       if !has_key(a:palette[mode], 'airline_warning')
-        let a:palette[mode]['airline_warning'] = [ '#000000', '#df5f00', 232, 166 ]
+        let a:palette[mode]['airline_warning'] = [ '#ffaa00', '#090909', 232, 166 ]
       endif
       if !has_key(a:palette[mode], 'airline_error')
-        let a:palette[mode]['airline_error'] = [ '#000000', '#990000', 232, 160 ]
+        let a:palette[mode]['airline_error'] = [ '#d9534f', '#090909', 232, 160 ]
       endif
       if !has_key(a:palette[mode], 'airline_term')
-        let a:palette[mode]['airline_term'] = [ '#9cffd3', '#202020', 85, 232]
+        let a:palette[mode]['airline_term'] = [ '#c6c8d1', '#090909', 85, 232]
       endif
     endfor
 
@@ -62,7 +62,7 @@ if !exists(":def") || !airline#util#has_vim9_script()
     let a:palette.accents.italic = [ '', '', '', '', 'italic' ]
 
     if !has_key(a:palette.accents, 'red')
-      let a:palette.accents.red = [ '#ff0000' , '' , 160 , '' ]
+      let a:palette.accents.red = [ '#d9534f' , '' , 160 , '' ]
     endif
     if !has_key(a:palette.accents, 'green')
       let a:palette.accents.green = [ '#008700' , '' , 22  , '' ]
@@ -126,13 +126,13 @@ else
         continue
       endif
       if !has_key(palette[mode], 'airline_warning')
-        extend(palette[mode], {airline_warning: [ '#000000', '#df5f00', '232', '166' ]})
+        extend(palette[mode], {airline_warning: [ '#ffaa00', '#090909', '232', '166' ]})
       endif
       if !has_key(palette[mode], 'airline_error')
-        extend(palette[mode], {airline_error: [ '#000000', '#990000', '232', '160' ]})
+        extend(palette[mode], {airline_error: [ '#d9534f', '#090909', '232', '160' ]})
       endif
       if !has_key(palette[mode], 'airline_term')
-        extend(palette[mode], {airline_term: [ '#9cffd3', '#202020', '85', '232' ]})
+        extend(palette[mode], {airline_term: [ '#c6c8d1', '#090909', '85', '232' ]})
       endif
     endfor
 
