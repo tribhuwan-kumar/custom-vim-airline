@@ -61,9 +61,9 @@ let g:airline#themes#dark#palette = {}
 " airline_x/y/z, respectively.
 
 " The dark.vim theme:
-let s:airline_a_normal   = [ '#c6c8d1' , '#090909' , 17  , 190 ]
-let s:airline_b_normal   = [ '#c6c8d1' , '#090909' , 255 , 238 ]
-let s:airline_c_normal   = [ '#c6c8d1' , '#090909' , 85  , 234 ]
+let s:airline_a_normal   = [ '#ebdbb2' , '#0C0D0C' , 17  , 190 ]
+let s:airline_b_normal   = [ '#ebdbb2' , '#0C0D0C' , 255 , 238 ]
+let s:airline_c_normal   = [ '#ebdbb2' , '#0C0D0C' , 85  , 234 ]
 let g:airline#themes#dark#palette.normal = airline#themes#generate_color_map(s:airline_a_normal, s:airline_b_normal, s:airline_c_normal)
 
 " It should be noted the above is equivalent to:
@@ -93,50 +93,50 @@ let g:airline#themes#dark#palette.normal = airline#themes#generate_color_map(s:a
 " applied after g:airline#themes#dark#palette.normal, hence why only certain keys are
 " declared.
 let g:airline#themes#dark#palette.normal_modified = {
-      \ 'airline_c': [ '#c6c8d1' , '#090909' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ebdbb2' , '#0C0D0C' , 255     , 53      , ''     ] ,
       \ }
 
 
-let s:airline_a_insert = [ '#c6c8d1' , '#090909' , 17  , 45  ]
-let s:airline_b_insert = [ '#c6c8d1' , '#090909' , 255 , 27  ]
-let s:airline_c_insert = [ '#c6c8d1' , '#090909' , 15  , 17  ]
+let s:airline_a_insert = [ '#ebdbb2' , '#0C0D0C' , 17  , 45  ]
+let s:airline_b_insert = [ '#ebdbb2' , '#0C0D0C' , 255 , 27  ]
+let s:airline_c_insert = [ '#ebdbb2' , '#0C0D0C' , 15  , 17  ]
 let g:airline#themes#dark#palette.insert = airline#themes#generate_color_map(s:airline_a_insert, s:airline_b_insert, s:airline_c_insert)
 let g:airline#themes#dark#palette.insert_modified = {
-      \ 'airline_c': [ '#c6c8d1' , '#090909' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ebdbb2' , '#0C0D0C' , 255     , 53      , ''     ] ,
       \ }
 let g:airline#themes#dark#palette.insert_paste = {
-      \ 'airline_a': [ s:airline_a_insert[0]   , '#090909' , s:airline_a_insert[2] , 172     , ''     ] ,
+      \ 'airline_a': [ s:airline_a_insert[0]   , '#0C0D0C' , s:airline_a_insert[2] , 172     , ''     ] ,
       \ }
 
 let g:airline#themes#dark#palette.terminal = airline#themes#generate_color_map(s:airline_a_insert, s:airline_b_insert, s:airline_c_insert)
 
 let g:airline#themes#dark#palette.replace = copy(g:airline#themes#dark#palette.insert)
-let g:airline#themes#dark#palette.replace.airline_a = [ s:airline_b_insert[0]   , '#090909' , s:airline_b_insert[2] , 124     , ''     ]
+let g:airline#themes#dark#palette.replace.airline_a = [ s:airline_b_insert[0]   , '#0C0D0C' , s:airline_b_insert[2] , 124     , ''     ]
 let g:airline#themes#dark#palette.replace_modified = g:airline#themes#dark#palette.insert_modified
 
 
-let s:airline_a_visual = [ '#c6c8d1' , '#090909' , 232 , 214 ]
-let s:airline_b_visual = [ '#c6c8d1' , '#090909' , 232 , 202 ]
-let s:airline_c_visual = [ '#c6c8d1' , '#090909' , 15  , 52  ]
+let s:airline_a_visual = [ '#ebdbb2' , '#0C0D0C' , 232 , 214 ]
+let s:airline_b_visual = [ '#ebdbb2' , '#0C0D0C' , 232 , 202 ]
+let s:airline_c_visual = [ '#ebdbb2' , '#0C0D0C' , 15  , 52  ]
 let g:airline#themes#dark#palette.visual = airline#themes#generate_color_map(s:airline_a_visual, s:airline_b_visual, s:airline_c_visual)
 let g:airline#themes#dark#palette.visual_modified = {
-      \ 'airline_c': [ '#c6c8d1' , '#090909' , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ '#ebdbb2' , '#0C0D0C' , 255     , 53      , ''     ] ,
       \ }
 
 
-let s:airline_a_inactive = [ '#7f7e7e' , '#090909' , 239 , 234 , '' ]
-let s:airline_b_inactive = [ '#7f7e7e' , '#090909' , 239 , 235 , '' ]
-let s:airline_c_inactive = [ '#7f7e7e' , '#090909' , 239 , 236 , '' ]
+let s:airline_a_inactive = [ '#595959' , '#0C0D0C' , 239 , 234 , '' ]
+let s:airline_b_inactive = [ '#595959' , '#0C0D0C' , 239 , 235 , '' ]
+let s:airline_c_inactive = [ '#595959' , '#0C0D0C' , 239 , 236 , '' ]
 let g:airline#themes#dark#palette.inactive = airline#themes#generate_color_map(s:airline_a_inactive, s:airline_b_inactive, s:airline_c_inactive)
 let g:airline#themes#dark#palette.inactive_modified = {
-      \ 'airline_c': [ '#090909' , '' , 97 , '' , '' ] ,
+      \ 'airline_c': [ '#0C0D0C' , '' , 97 , '' , '' ] ,
       \ }
 
 " For commandline mode, we use the colors from normal mode, except the mode
 " indicator should be colored differently, e.g. light green
-let s:airline_a_commandline = [ '#c6c8d1' , '#090909' , 17  , 40 ]
-let s:airline_b_commandline = [ '#c6c8d1' , '#090909' , 255 , 238 ]
-let s:airline_c_commandline = [ '#c6c8d1' , '#090909' , 85  , 234 ]
+let s:airline_a_commandline = [ '#ebdbb2' , '#0C0D0C' , 17  , 40 ]
+let s:airline_b_commandline = [ '#ebdbb2' , '#0C0D0C' , 255 , 238 ]
+let s:airline_c_commandline = [ '#ebdbb2' , '#0C0D0C' , 85  , 234 ]
 let g:airline#themes#dark#palette.commandline = airline#themes#generate_color_map(s:airline_a_commandline, s:airline_b_commandline, s:airline_c_commandline)
 
 " Accents are used to give parts within a section a slightly different look or
@@ -147,7 +147,7 @@ let g:airline#themes#dark#palette.commandline = airline#themes#generate_color_ma
 " will be red instead of the section's foreground color. You can also have
 " multiple parts with accents within a section.
 let g:airline#themes#dark#palette.accents = {
-      \ 'white': [ '#c6c8d1' , '' , 160 , ''  ]
+      \ 'white': [ '#ebdbb2' , '' , 160 , ''  ]
       \ }
 
 
@@ -157,7 +157,7 @@ let g:airline#themes#dark#palette.accents = {
 " they will be chosen automatically from the existing palette.
 if get(g:, 'loaded_ctrlp', 0)
   let g:airline#themes#dark#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
-        \ [ '#c6c8d1' , '#090909' , 189 , 55  , ''     ],
-        \ [ '#c6c8d1' , '#090909' , 231 , 98  , ''     ],
-        \ [ '#090909' , '#c6c8d1' , 55  , 231 , 'bold' ])
+        \ [ '#ebdbb2' , '#0C0D0C' , 189 , 55  , ''     ],
+        \ [ '#ebdbb2' , '#0C0D0C' , 231 , 98  , ''     ],
+        \ [ '#0C0D0C' , '#ebdbb2' , 55  , 231 , 'bold' ])
 endif
